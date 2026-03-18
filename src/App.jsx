@@ -38,90 +38,92 @@ function Model({ path, ...props }) {
 function MonitorScreen({ isOn, onClose }) {
   if (!isOn) return null;
 
+  const base = import.meta.env.BASE_URL;
+
   return (
     <Html transform distanceFactor={0.053} position={[0.0109, 0.104, -0.0002]} rotation={[0, -Math.PI / 2, 0]} occlude="blended">
       <div id="monitor">
         <div className="window-header">
-          <span class="window-title">Projects</span>
+          <span className="window-title">Projects</span>
           <div className="window-controls">
             <div id="cross" onClick={onClose}></div>
           </div>
         </div>
 
         <div id="monitor-content" onWheel={(e) => e.stopPropagation()}>
-          <div class="project">
-            <img src="/robot.png" alt="robot"></img>
-            <div class="card">
-              <div class="techStack">Cpp</div>
-              <div class="title">
-                Robot
+          <div className="project">
+            <img src={`${base}robot.png`} alt="robot" />
+            <div className="card">
+              <div className="techStack">Cpp</div>
+              <div className="title">Robot</div>
+              <div className="description">Symulacja działania robota antropomorficznego</div>
+              <div className="git">
+                <a href="https://github.com/praha6248/Robot_arm" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                  <img src={`${base}git.png`} alt="git" />
+                </a>
               </div>
-              <div class="description">Symulacja działania robota antropomorficznego</div>
-              <div class="git"><a href="https://github.com/praha6248/Robot_arm" target="_blank" rel="noopener noreferrer">
-                <img src="/git.png" alt="git" />
-              </a></div>
             </div>
           </div>
-          <div class="project">
-            <img src="/grupowy.png" alt="aal"></img>
-            <div class="card">
-              <div class="techStack">Flutter</div>
-              <div class="title">
-                Assisted living
+
+          <div className="project">
+            <img src={`${base}grupowy.png`} alt="aal" />
+            <div className="card">
+              <div className="techStack">Flutter</div>
+              <div className="title">Assisted living</div>
+              <div className="description">Aplikacja wspierająca osoby starsze i z niepełnosprawnościami</div>
+              <div className="git">
+                <a href="https://github.com/praha6248/ambient-assisted-living-app" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                  <img src={`${base}git.png`} alt="git" />
+                </a>
               </div>
-              <div class="description">Aplikacja wspierająca osoby starsze i z niepełnosprawnościami mieszkające samodzielnie</div>
-              <div class="git"><a href="https://github.com/praha6248/ambient-assisted-living-app" target="_blank" rel="noopener noreferrer">
-                <img src="/git.png" alt="git" />
-              </a></div>
-            </div>
-            
-          </div>
-          <div class="project">
-            <img src="/sandbox.png" alt="sandbox"></img>
-            <div class="card">
-              <div class="techStack">React</div>
-              <div class="title">
-                Sandbox
-              </div>
-              <div class="description">Symulacja typu falling sand</div>
-              <div class="git"><a href="https://github.com/praha6248/symulacja_falling_sand" target="_blank" rel="noopener noreferrer">
-                <img src="/git.png" alt="git" />
-              </a></div>
-            </div>
-            
-          </div>
-          <div class="project">
-            <img src="/hackathon.png" alt="map"></img>
-            <div class="card">
-              <div class="techStack">Html</div>
-              <div class="techStack">CSS</div>
-              <div class="techStack">JS</div>
-              <div class="title">
-                Smart city
-              </div>
-              <div class="description">Interaktywna mapa Gdańska</div>
-              <div class="git"><a href="https://github.com/praha6248/hackathon_smart_city" target="_blank" rel="noopener noreferrer">
-                <img src="/git.png" alt="git" />
-              </a></div>
             </div>
           </div>
-          <div class="project">
-            <img src="/budget.png" alt="budget"></img>
-            <div class="card">
-              <div class="techStack">C#</div>
-              <div class="techStack">MySql</div>
-              <div class="title">
-                Budget app
+
+          <div className="project">
+            <img src={`${base}sandbox.png`} alt="sandbox" />
+            <div className="card">
+              <div className="techStack">React</div>
+              <div className="title">Sandbox</div>
+              <div className="description">Symulacja typu falling sand</div>
+              <div className="git">
+                <a href="https://github.com/praha6248/symulacja_falling_sand" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                  <img src={`${base}git.png`} alt="git" />
+                </a>
               </div>
-              <div class="description">Aplikacja umożliwiająca śledzenie wydatków</div>
-              <div class="description">Aplikacja wspierająca osoby starsze i z niepełnosprawnościami mieszkające samodzielnie</div>
-              <div class="git"><a href="https://github.com/praha6248/BudgetApp/" target="_blank" rel="noopener noreferrer">
-                <img src="/git.png" alt="git" />
-              </a></div>
+            </div>
+          </div>
+
+          <div className="project">
+            <img src={`${base}hackathon.png`} alt="map" />
+            <div className="card">
+              <div className="techStack">Html</div>
+              <div className="techStack">CSS</div>
+              <div className="techStack">JS</div>
+              <div className="title">Smart city</div>
+              <div className="description">Interaktywna mapa Gdańska</div>
+              <div className="git">
+                <a href="https://github.com/praha6248/hackathon_smart_city" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                  <img src={`${base}git.png`} alt="git" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="project">
+            <img src={`${base}budget.png`} alt="budget" />
+            <div className="card">
+              <div className="techStack">C#</div>
+              <div className="techStack">MySql</div>
+              <div className="title">Budget app</div>
+              <div className="description">Aplikacja umożliwiająca śledzenie wydatków</div>
+              <div className="git">
+                <a href="https://github.com/praha6248/BudgetApp/" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                  <img src={`${base}git.png`} alt="git" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        
       </div>
     </Html>
   );
@@ -147,28 +149,12 @@ function CameraHandler({ focusTarget, isLocked }) {
       makeDefault 
       enabled={!isLocked}
       dampingFactor={0.2} 
-      onChange={(e) => {
-        const pos = controls.current.getPosition()
-        const tar = controls.current.getTarget()
-        console.log("AKTUALNY WIDOK:", {
-          position: [
-            Number(pos.x.toFixed(3)), 
-            Number(pos.y.toFixed(3)), 
-            Number(pos.z.toFixed(3))
-          ],
-          target: [
-            Number(tar.x.toFixed(3)), 
-            Number(tar.y.toFixed(3)), 
-            Number(tar.z.toFixed(3))
-          ]
-        })
-      }}
     />
   )
 }
 
 function MonitorModel({ isFocused, onClick }) {
-  const { scene } = useGLTF('/obj/monitor2.glb')
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}obj/monitor2.glb`)
   const [hovered, setHover] = useState(false)
   
   return (
@@ -190,7 +176,7 @@ function MonitorModel({ isFocused, onClick }) {
 }
 
 function Papers({ isFocused, onClick }) {
-  const { scene } = useGLTF('/obj/kartki.glb')
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}obj/kartki.glb`)
   const [hovered, setHover] = useState(false)
   return (
     <Select enabled={isFocused || hovered}>
@@ -206,16 +192,19 @@ function Papers({ isFocused, onClick }) {
 
 export default function App() {
   const [focusTarget, setFocusTarget] = useState(VIEWS.HOME)
+  const base = import.meta.env.BASE_URL;
 
   const handleSelect = (viewData) => {
-  setFocusTarget(prev => {
-    if (prev && prev.position[0] === viewData.position[0]) {
-      return null
-    }
-    return viewData
-  })
-}
-const isPapersFocused = focusTarget?.position[0] === VIEWS.PAPERS.position[0];
+    setFocusTarget(prev => {
+      if (prev && prev.position[0] === viewData.position[0]) {
+        return VIEWS.HOME
+      }
+      return viewData
+    })
+  }
+
+  const isPapersFocused = focusTarget?.position[0] === VIEWS.PAPERS.position[0];
+  const isMonitorFocused = focusTarget?.position[0] === VIEWS.MONITOR.position[0];
 
   return (
     <div id="app-wrapper">
@@ -223,31 +212,9 @@ const isPapersFocused = focusTarget?.position[0] === VIEWS.PAPERS.position[0];
         <div className="header-content">
           <h1 id="name">NATALIA PŁOCHA</h1>
           <nav className="nav-menu">
-            <a 
-            href="#" 
-            className={
-              focusTarget?.position[0] !== VIEWS.MONITOR.position[0] && 
-              focusTarget?.position[0] !== VIEWS.PAPERS.position[0] 
-              ? 'active' : ''
-            }
-            onClick={(e) => { e.preventDefault(); handleSelect(VIEWS.HOME); }}
-          >
-            Home
-          </a>
-            <a 
-              href="#resume" 
-              className={focusTarget?.position[0] === VIEWS.PAPERS.position[0] ? 'active' : ''}
-              onClick={(e) => { e.preventDefault(); handleSelect(VIEWS.PAPERS); }}
-            >
-              Resume
-            </a>
-            <a 
-              href="#projects" 
-              className={focusTarget?.position[0] === VIEWS.MONITOR.position[0] ? 'active' : ''}
-              onClick={(e) => { e.preventDefault(); handleSelect(VIEWS.MONITOR); }}
-            >
-              Projects
-            </a>
+            <a href="#" className={!isMonitorFocused && !isPapersFocused ? 'active' : ''} onClick={(e) => { e.preventDefault(); handleSelect(VIEWS.HOME); }}>Home</a>
+            <a href="#resume" className={isPapersFocused ? 'active' : ''} onClick={(e) => { e.preventDefault(); handleSelect(VIEWS.PAPERS); }}>Resume</a>
+            <a href="#projects" className={isMonitorFocused ? 'active' : ''} onClick={(e) => { e.preventDefault(); handleSelect(VIEWS.MONITOR); }}>Projects</a>
           </nav>
         </div>
       </header>
@@ -264,45 +231,28 @@ const isPapersFocused = focusTarget?.position[0] === VIEWS.PAPERS.position[0];
             </EffectComposer>
 
             <Center top>
-              <MonitorModel 
-                isFocused={focusTarget?.position[0] === VIEWS.MONITOR.position[0]}
-                onClick={() => handleSelect(VIEWS.MONITOR)} 
-              />
-              
-              <Papers 
-                isFocused={focusTarget?.position[0] === VIEWS.PAPERS.position[0]}
-                onClick={() => handleSelect(VIEWS.PAPERS)} 
-              />
-              
-              <Model path="/obj/biurko.glb" />
-              <Model path="/obj/akcesoria.glb" />
+              <MonitorModel isFocused={isMonitorFocused} onClick={() => handleSelect(VIEWS.MONITOR)} />
+              <Papers isFocused={isPapersFocused} onClick={() => handleSelect(VIEWS.PAPERS)} />
+              <Model path={`${base}obj/biurko.glb`} />
+              <Model path={`${base}obj/akcesoria.glb`} />
             </Center>
           </Selection>
-          <mesh 
-            rotation={[-Math.PI / 2, 0, 0]} 
-            position={[0, -0.0001, 0]} 
-            onClick={() => setFocusTarget(null)}
-            receiveShadow 
-          >
+
+          <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.0001, 0]} onClick={() => setFocusTarget(VIEWS.HOME)} receiveShadow>
             <circleGeometry args={[0.1, 64]} /> 
             <meshStandardMaterial color="#1f1f1f" roughness={0.8} />
           </mesh>
 
-          <CameraHandler 
-            focusTarget={focusTarget} 
-            isLocked={focusTarget?.position[0] === VIEWS.MONITOR.position[0]} 
-          />
+          <CameraHandler focusTarget={focusTarget} isLocked={isMonitorFocused} />
         </Suspense>
       </Canvas>
+
       {isPapersFocused && (
         <a 
-          href="/Natalia_Plocha_CV.pdf"
+          href={`${base}Natalia_Plocha_CV.pdf`}
           download="Natalia_Plocha_CV.pdf"
           id="download"
-          onClick={(e) => {
-            e.stopPropagation();
-          }}
-          style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+          onClick={(e) => e.stopPropagation()}
         >
           Download CV
         </a>
