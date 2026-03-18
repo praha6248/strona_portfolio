@@ -49,80 +49,85 @@ function MonitorScreen({ isOn, onClose }) {
             <div id="cross" onClick={onClose}></div>
           </div>
         </div>
-
         <div id="monitor-content" onWheel={(e) => e.stopPropagation()}>
-          <div className="project">
-            <img src={`${base}robot.png`} alt="robot" />
-            <div className="card">
-              <div className="techStack">Cpp</div>
-              <div className="title">Robot</div>
-              <div className="description">Symulacja działania robota antropomorficznego</div>
-              <div className="git">
-                <a href="https://github.com/praha6248/Robot_arm" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
-                  <img src={`${base}git.png`} alt="git" />
-                </a>
+          <a href="https://github.com/praha6248/Robot_arm" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+            <div className="project">
+              <img src={`${base}robot.png`} alt="robot" />
+              <div className="card">
+                <div className="techStack">Cpp</div>
+                <div className="title">Robot</div>
+                <div className="description">Symulacja działania robota antropomorficznego</div>
+                <div className="git">
+                  <a href="https://github.com/praha6248/Robot_arm" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                    <img src={`${base}git.png`} alt="git" />
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="project">
-            <img src={`${base}grupowy.png`} alt="aal" />
-            <div className="card">
-              <div className="techStack">Flutter</div>
-              <div className="title">Assisted living</div>
-              <div className="description">Aplikacja wspierająca osoby starsze i z niepełnosprawnościami</div>
-              <div className="git">
-                <a href="https://github.com/praha6248/ambient-assisted-living-app" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
-                  <img src={`${base}git.png`} alt="git" />
-                </a>
+          </a>
+          <a href="https://github.com/praha6248/ambient-assisted-living-app" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+            <div className="project">
+              <img src={`${base}grupowy.png`} alt="aal" />
+              <div className="card">
+                <div className="techStack">Flutter</div>
+                <div className="title">Assisted living</div>
+                <div className="description">Aplikacja wspierająca osoby starsze i z niepełnosprawnościami</div>
+                <div className="git">
+                  <a href="https://github.com/praha6248/ambient-assisted-living-app" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                    <img src={`${base}git.png`} alt="git" />
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="project">
-            <img src={`${base}sandbox.png`} alt="sandbox" />
-            <div className="card">
-              <div className="techStack">React</div>
-              <div className="title">Sandbox</div>
-              <div className="description">Symulacja typu falling sand</div>
-              <div className="git">
-                <a href="https://github.com/praha6248/symulacja_falling_sand" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
-                  <img src={`${base}git.png`} alt="git" />
-                </a>
+          </a>
+          <a href="https://github.com/praha6248/symulacja_falling_sand" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+            <div className="project">
+              <img src={`${base}sandbox.png`} alt="sandbox" />
+              <div className="card">
+                <div className="techStack">React</div>
+                <div className="title">Sandbox</div>
+                <div className="description">Symulacja typu falling sand</div>
+                <div className="git">
+                  <a href="https://github.com/praha6248/symulacja_falling_sand" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                    <img src={`${base}git.png`} alt="git" />
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="project">
-            <img src={`${base}hackathon.png`} alt="map" />
-            <div className="card">
-              <div className="techStack">Html</div>
-              <div className="techStack">CSS</div>
-              <div className="techStack">JS</div>
-              <div className="title">Smart city</div>
-              <div className="description">Interaktywna mapa Gdańska</div>
-              <div className="git">
-                <a href="https://github.com/praha6248/hackathon_smart_city" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
-                  <img src={`${base}git.png`} alt="git" />
-                </a>
+          </a>
+          <a href="https://github.com/praha6248/hackathon_smart_city" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+            <div className="project">
+              <img src={`${base}hackathon.png`} alt="map" />
+              <div className="card">
+                <div className="techStack">Html</div>
+                <div className="techStack">CSS</div>
+                <div className="techStack">JS</div>
+                <div className="title">Smart city</div>
+                <div className="description">Interaktywna mapa Gdańska</div>
+                <div className="git">
+                  <a href="https://github.com/praha6248/hackathon_smart_city" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                    <img src={`${base}git.png`} alt="git" />
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="project">
-            <img src={`${base}budget.png`} alt="budget" />
-            <div className="card">
-              <div className="techStack">C#</div>
-              <div className="techStack">MySql</div>
-              <div className="title">Budget app</div>
-              <div className="description">Aplikacja umożliwiająca śledzenie wydatków</div>
-              <div className="git">
-                <a href="https://github.com/praha6248/BudgetApp/" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
-                  <img src={`${base}git.png`} alt="git" />
-                </a>
+          </a>
+          <a href="https://github.com/praha6248/BudgetApp/" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+            <div className="project">
+              <img src={`${base}budget.png`} alt="budget" />
+              <div className="card">
+                <div className="techStack">C#</div>
+                <div className="techStack">MySql</div>
+                <div className="title">Budget app</div>
+                <div className="description">Aplikacja umożliwiająca śledzenie wydatków</div>
+                <div className="git">
+                  <a href="https://github.com/praha6248/BudgetApp/" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                    <img src={`${base}git.png`} alt="git" />
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </Html>
