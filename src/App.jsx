@@ -41,7 +41,7 @@ function MonitorScreen({ isOn, onClose }) {
   const base = import.meta.env.BASE_URL;
 
   return (
-    <Html transform distanceFactor={0.053} position={[0.0109, 0.104, -0.0002]} rotation={[0, -Math.PI / 2, 0]} occlude="blended">
+    <Html transform distanceFactor={0.01325} position={[0.0109, 0.104, -0.0002]} rotation={[0, -Math.PI / 2, 0]} occlude="blended">
       <div id="monitor">
         <div className="window-header">
           <span className="window-title">Projects</span>
