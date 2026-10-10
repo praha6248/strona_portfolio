@@ -62,25 +62,25 @@ html, body, #root {
 .window-header {
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
-  padding: 4px 16px;
+  padding: 16px 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.2);
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
 .window-controls {
-  margin-right: 16px;
+  margin-right: 64px;
   display: flex;
-  gap: 8px;
+  gap: 32px;
 }
 
 #cross {
-  width: 12px;
-  height: 12px;
+  width: 48px;
+  height: 48px;
   border: none;
   background: none;
   position: relative;
@@ -94,10 +94,10 @@ html, body, #root {
 #cross::after {
   content: '';
   position: absolute;
-  width: 2px;
-  height: 16px;
+  width: 8px;
+  height: 64px;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 40px;
 }
 
 #cross::before {
@@ -109,15 +109,15 @@ html, body, #root {
 }
 
 .window-title {
-  font-size: 12px;
+  font-size: 48px;
   opacity: 1;
-  margin-left:16px;
-  letter-spacing: 1px;
+  margin-left:64px;
+  letter-spacing: 4px;
   color: #ffffff;
 }
 #monitor{
-  width: 400px;
-  height: 255px;
+  width: 1600px;
+  height: 1020px;
   background: #3d3d3d;
   color: white;
   display: flex;
@@ -140,45 +140,45 @@ html, body, #root {
 }
 
 #monitor-content::-webkit-scrollbar {
-  width: 8px;
+  width: 32px;
 }
 #monitor-content::-webkit-scrollbar-track {
   background: rgb(43, 43, 43);
 }
 #monitor-content::-webkit-scrollbar-thumb {
   background-color: #8e8e8e;
-  border-radius: 4px;
+  border-radius: 16px;
 }
 
 .project {
-  margin: 24px 64px;
-  border-radius: 8px;
+  margin: 96px 256px;
+  border-radius: 32px;
   background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 4px solid rgba(255, 255, 255, 0.2);
 }
 
 .card{
   color:#ffffff;
-  padding:8px 16px;
+  padding:32px 64px;
 }
 
 .title{
-  font-size: 14px;
+  font-size: 56px;
 }
 
 .description{
-  font-size: 12px;
+  font-size: 48px;
 }
 
 .techStack{
-  padding: 2px 4px;
-  border-radius: 8px;
+  padding: 8px 16px;
+  border-radius: 32px;
   color:#ffffff;
   background-color: #8e8e8e;
-  font-size: 8px;
+  font-size: 32px;
   display: inline-block;
-  margin-bottom: 8px;
-  margin-right:8px;
+  margin-bottom: 32px;
+  margin-right:32px;
 }
 
 
@@ -222,15 +222,15 @@ img {
   max-width: 100%;
   height: auto;
   display: block; 
-  border-top-left-radius: 6px; 
-  border-top-right-radius:6px
+  border-top-left-radius: 24px; 
+  border-top-right-radius:24px
 }
 
 .git{
-  margin-top: 8px;
+  margin-top: 32px;
   border-radius: 100%;
-  width:16px;
-  height:16px;
+  width:64px;
+  height:64px;
   filter: brightness(80%);
   transition: filter 0.2s ease-in-out, transform 0.2s ease-in-out;
 
